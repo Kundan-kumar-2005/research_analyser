@@ -88,8 +88,4 @@ public class PaperController {
     public List<Paper> searchPaper(@RequestParam String keyword){
         return paperService.searchPaper(keyword);
     }
-
-
-
-
 }

@@ -10,6 +10,8 @@ public class ResearchPlatformApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(ResearchPlatformApplication.class, args);
+        BCryptPasswordEncoder passwordEncoder=new BCryptPasswordEncoder();
+        System.out.println(passwordEncoder.encode("admin@123"));
     }
 
 

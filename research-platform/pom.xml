@@ -29,7 +29,6 @@
 	<properties>
 		<java.version>21</java.version>
 	</properties>
-    ```xml
     <dependencies>
 
         <!-- Spring Web -->
@@ -104,10 +103,10 @@
         </dependency>
 
     </dependencies>
-    ```
 
 
     <build>
+        <finalName>Research-App-Backend</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

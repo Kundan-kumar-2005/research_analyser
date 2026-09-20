@@ -55,7 +55,7 @@ public class PaperServiceImpl implements PaperService{
     public String deletePaper(Long id) {
         Paper paper=paperRepository.findById(id).orElseThrow(()->new RuntimeException("Paper not found"));
         paperRepository.delete(paper);
-        return "Paper deletedSuccessfully";
+        return "Paper deleted Successfully";
     }
 
     @Override
@@ -88,7 +88,6 @@ public class PaperServiceImpl implements PaperService{
 
         return "Paper uploaded successfully";
     }
-
     @Override
     public ResponseEntity<Resource> downloadPaper(Long id) throws IOException{
         Paper paper =paperRepository.findById(id).orElseThrow(()-> new RuntimeException("Paper not found"));
